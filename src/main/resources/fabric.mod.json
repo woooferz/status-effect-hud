@@ -22,6 +22,12 @@
 			"dev.wooferz.effecthud.StatusEffectHUDClient"
 		]
 	},
+	"mixins": [
+		{
+			"config": "status-effect-hud.client.mixins.json",
+			"environment": "client"
+		}
+	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
 		"minecraft": "~1.20.1",

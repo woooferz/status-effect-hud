@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 public class StatusEffectHUDClient implements ClientModInitializer {
 	public static final String MOD_ID = "status-effect-hud";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+	public static Boolean disableVanillaGui = false;
 	@Override
 	public void onInitializeClient() {
 		HudManager.registerHudElement(new EffectHudElement());
