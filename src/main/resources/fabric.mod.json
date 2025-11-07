@@ -3,13 +3,13 @@
 	"id": "status-effect-hud",
 	"version": "${version}",
 	"name": "Status Effect HUD",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This adds Status Effects to the HUD through HUD Lib.",
 	"authors": [
-		"Me!"
+		"Wooferz"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/status-effect-hud/",
+		"sources": "https://github.com/woooferz/status-effect-hud/"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/status-effect-hud/icon.png",
@@ -32,9 +32,7 @@
 		"fabricloader": ">=0.17.3",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabric-api": "*",
+		"hudlib": ">=1.1.1"
 	}
 }
