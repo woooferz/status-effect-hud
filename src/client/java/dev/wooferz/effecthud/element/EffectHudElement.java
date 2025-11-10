@@ -80,7 +80,7 @@ public class EffectHudElement extends HUDElement {
             drawContext.fill(x, y, x + width, y+rHeight, bgColor);
 
             for (StatusEffectInstance effect : effects) {
-                StatusEffect effectType = effect.getEffectType();
+                StatusEffect effectType = effect.getEffectType().value();
                 String registryName = String.valueOf(Registries.STATUS_EFFECT.getId(effectType)).replaceFirst("^minecraft:", "");
                 Identifier texture = Identifier.of("minecraft", "textures/mob_effect/" + registryName + ".png");
 
