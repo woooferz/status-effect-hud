@@ -11,6 +11,7 @@ import dev.wooferz.hudlib.HudAnchor;
 import dev.wooferz.hudlib.hud.HUDConfig;
 import dev.wooferz.hudlib.hud.HUDElement;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.render.RenderLayer;
@@ -100,7 +101,7 @@ public class EffectHudElement extends HUDElement {
                     drawContext.drawText(mc.textRenderer, "∞", 2+x+19, 3+14+y+i*25, timeColor, true);
                 }
 
-                drawContext.drawTexture(RenderLayer::getGuiTextured, texture, 2+x, 7+y+i*25, 0, 0, 16, 16, 16, 16);
+                drawContext.drawTexture(RenderPipelines.GUI_TEXTURED, texture, 2+x, 7+y+i*25, 0, 0, 16, 16, 16, 16);
 
 
                 i++;
