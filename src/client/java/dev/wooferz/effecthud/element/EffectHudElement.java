@@ -13,6 +13,7 @@ import dev.wooferz.hudlib.hud.HUDElement;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.network.ClientPlayerEntity;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -99,8 +100,7 @@ public class EffectHudElement extends HUDElement {
                     drawContext.drawText(mc.textRenderer, "∞", 2+x+19, 3+14+y+i*25, timeColor, true);
                 }
 
-
-                drawContext.drawTexture(texture, 2+x, 7+y+i*25, 0, 0, 16, 16, 16, 16);
+                drawContext.drawTexture(RenderLayer::getGuiTextured, texture, 2+x, 7+y+i*25, 0, 0, 16, 16, 16, 16);
 
 
                 i++;
